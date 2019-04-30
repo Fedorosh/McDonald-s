@@ -57,6 +57,7 @@ namespace McDonald_s
                 if ((actual - 10) < 0) zera = "00";
                 else if ((actual - 100) < 0) zera = "0";
                 else zera = "";
+                if(actual > 0)
                 sklep += zera + actual + "\n";
             } while (ile-- > 0);
 

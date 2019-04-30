@@ -8,9 +8,9 @@ namespace McDonald_s
 {
     class Zestaw : Klient
     {
-        protected int numerek;
-        protected float cena;
-        protected bool czy_zestaw;
+        private int numerek;
+        private float cena;
+        private bool czy_zestaw;
 
         public float Cena { get => cena; set => cena = value; }
 
