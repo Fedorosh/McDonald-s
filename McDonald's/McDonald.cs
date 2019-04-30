@@ -48,7 +48,7 @@ namespace McDonald_s
         override
         public string ToString()
         {
-            Console.WriteLine("Zamowienia w realizacji:");
+            Console.WriteLine("Zamowienia w realizacji:                     Nacisnij q zeby wyjsc");
             string sklep = "";
             string zera;
             int ile = ile_w_realizacji;

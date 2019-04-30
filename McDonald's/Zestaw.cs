@@ -40,9 +40,9 @@ namespace McDonald_s
             McDonald.Instance.inkrementuj();
             numerek = McDonald.Instance.Numerek;
             if(czy_zestaw)
-            Console.WriteLine("Klient zamowil burgera z zestawem");
+            Console.WriteLine("Klient zamowil burgera z zestawem (8,99 PLN)");
             else
-            Console.WriteLine("Klient zamowil burgera bez zestawu");
+            Console.WriteLine("Klient zamowil burgera bez zestawu (3,99 PLN)");
         }
 
     }

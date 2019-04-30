@@ -38,9 +38,11 @@ namespace McDonald_s
             Random rand = new Random();
             Random ile = new Random();
             int ile_zamow = ile.Next(5);
-            int ile_odbierz = ile_zamow / 2;
 
-            for(int i = 0; i < ile_zamow; i++)
+            int ile_odbierz = ile_zamow - 1;
+            if (ile_odbierz < 0) ile_odbierz = 0;
+
+            for(int i = 0; i <= ile_zamow; i++)
             {
                 bool czy_zestaw = rand.Next(2) == 1;
                 bigmac = new Zestaw(czy_zestaw);
@@ -49,7 +51,7 @@ namespace McDonald_s
             }
 
             System.Threading.Thread.Sleep(300); //klient zamawia i czeka na kasjera
-            for (int i = 0; i < ile_odbierz; i++)
+            for (int i = 0; i <= ile_odbierz; i++)
             {
                 bigmac.odbierz();
             }
