@@ -18,7 +18,6 @@ namespace McDonald_s
         public int ile_w_realizacji = 0;
         private float zarobek = 0.0f;
         private static McDonald instance = null;
-        public List<Klient> zestawy = new List<Klient>();
         public int Numerek { get => numerek; }
         private McDonald()
         {
